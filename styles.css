@@ -25,19 +25,69 @@ body {
 .container-list li{
     margin-right: 20px;
     list-style: none;
+    padding: 5px 15px;
+}
+.container-list li:hover{
+    box-shadow: 5px 5px 1px #000, inset 5px 5px 1px #aaa;
 }
 .container-header h1{
     color: #fff;
     letter-spacing: 2;
+    padding: 50px 0px;
 }
 .container-title{
     width: 50%;
     font-size: 30px;
     margin-bottom: 30px;
     letter-spacing: 2;
+    padding: 20px 10px;
 }
 .container-text{
     width: 60%;
     margin-bottom: 30px;
     line-height: 32px;
+    padding: 20px 10px;
+}
+.contenedor{
+    position: relative;
+    padding: 100px 30px;
+    background-color: #fff
+}
+.contenedor img{
+    width: 400px;
+    position: absolute;
+    bottom: 150px;
+    right: 100px; 
+}
+.container-animate{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion-cuadro;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion-cuadro{
+    0%{
+        left: 0;
+        top:0;
+    }
+    25%{
+        left: 100%;
+        top: 0;
+    }
+    50%{
+        left: 100%;
+        top: 100%;
+        background-color: blue;
+    }
+    75%{
+        left: 0;
+        top: 100%;
+    }
 }
